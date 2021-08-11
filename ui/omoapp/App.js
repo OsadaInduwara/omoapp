@@ -13,6 +13,8 @@ import { axios } from "axios";
 export default function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+
   const [isSubmit, setIsSubmit] = useState(false);
 
   useEffect(() => {
@@ -40,6 +42,14 @@ export default function App() {
     <View style={styles.container}>
  
       <StatusBar style="auto" />
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="username"
+          placeholderTextColor="#003f5c"
+          onChangeText={(username) => setUsername(username)}
+        />
+      </View>
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}

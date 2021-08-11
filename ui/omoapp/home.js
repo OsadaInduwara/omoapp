@@ -16,7 +16,13 @@ const styles = StyleSheet.create({
 const FlatListBasics = () => {
   return (
     <View style={styles.container}>
-      <FlatList data={[ here will be the getting data from database    ]} />
+      <FlatList /> data=
+      {
+        [
+          //here will be the getting data from database
+        ]
+      }{" "}
+      />
     </View>
   );
 };
